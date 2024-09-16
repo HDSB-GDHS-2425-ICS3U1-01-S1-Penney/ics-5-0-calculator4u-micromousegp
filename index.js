@@ -1,6 +1,6 @@
 function runProgram () {
 // start text
-console.log ("welcome to a calculator I think")
+console.log ("welcome to a calculator, I think")
 console.log ("please enter your first number")
 console.log ("...")
 
@@ -15,7 +15,7 @@ if (isNaN(num1)) { // checking for number
 
 // function for operation
 let operation = prompt ("please enter your operation for  calculation")
-if (operation == "-" || operation == "+" || operation == "*" || operation == "/") {
+if (operation == "-" || operation == "+" || operation == "*" || operation == "/" || operation == "^") {
     console.log (operation)
 } else {
     console.log ("invalide operation")
@@ -42,7 +42,9 @@ if (operation == "+") {
 } else if (operation == "/") {
     let ans = (num1 / num2)
     console.log (ans)
+} else if (operation == "^") {
+    let ans = (num1 ** num2)
+    console.log (ans)
 }
-runProgram ()
 }
 runProgram ()
